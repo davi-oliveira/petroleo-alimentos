@@ -213,3 +213,11 @@ curl -X POST "http://127.0.0.1:8000/orders/1/pay" \
 
 
 python -m uvicorn app.main:app --reload
+
+
+Para rodar:
+# Backend
+source .venv/bin/activate && uvicorn app.main:app --reload
+
+# Frontend (nova aba)
+cd frontend && npm run dev
